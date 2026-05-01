@@ -1,0 +1,16 @@
+{
+  "name": "hello-base",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "First hands-on contact with Base Sepolia — read the latest block number.",
+  "scripts": {
+    "start": "node read-block.js"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

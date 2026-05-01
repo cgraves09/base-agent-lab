@@ -2,17 +2,21 @@
 
 What's on deck for `base-agent-lab`. This is the public-facing queue — concrete, polished, honest. Speculative ideas and brainstorms live in the private companion repo.
 
+## Active
+
+- [ ] **Lesson 1 — Hello, Base.** Read the latest block from Base Sepolia. → [`experiments/001-hello-base/`](./experiments/001-hello-base/)
+
 ## On deck
 
-- [ ] Read the official Base getting-started docs end-to-end and write the first honest pass at [`docs/01-base-basics.md`](./docs/01-base-basics.md)
-- [ ] Set up a local dev environment for Base Sepolia (toolchain decision pending — will be documented in a guide)
-- [ ] Run the first hands-on experiment in [`experiments/001-hello-base/`](./experiments/001-hello-base/) and write up what happened
+- [ ] **Lesson 2 — Read an account's balance** on Base Sepolia. (Pick any address from the explorer.)
+- [ ] **Lesson 3 — Get free Sepolia ETH** from a faucet, watch a balance change.
+- [ ] **Lesson 4 — Send your first transaction** on Sepolia.
+- [ ] First entry in [`LEARNED.md`](./LEARNED.md) — distilled from Lessons 1–4.
 
 ## Soon
 
-- [ ] Pick a contract framework (Foundry vs Hardhat) and document the choice with reasoning
-- [ ] First contract deploy to Base Sepolia + verify on Basescan
-- [ ] First entry in [`LEARNED.md`](./LEARNED.md)
+- [ ] **Lesson 5 — Deploy your first contract** to Base Sepolia. Pick a framework (Foundry vs Hardhat) and document the choice.
+- [ ] First `guides/` entry — a polished walkthrough of Lessons 1–4 for other beginners.
 
 ## Format
 
