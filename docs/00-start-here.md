@@ -29,3 +29,5 @@ If you're new to Base: start with [`01-base-basics.md`](./01-base-basics.md), th
 If you're following along: watch [`NEXT.md`](../NEXT.md) and the experiments under [`experiments/`](../experiments/) for the latest.
 
 If you want to run the experiments: each one in `experiments/` will have its own README with setup instructions.
+
+If you find yourself losing track of viem imports/methods across lessons: keep [`02-viem-cheatsheet.md`](./02-viem-cheatsheet.md) open in a side tab. viem ends up being the main new surface area — Base itself is "just" a chain.
