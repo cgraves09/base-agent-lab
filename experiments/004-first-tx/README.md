@@ -102,6 +102,27 @@ Open [`send-tx.js`](./send-tx.js).
 3. **Send a second one.** Run the script again. Notice the nonce has incremented. Look at your address on Basescan — you now have two outgoing txs.
 4. **Try a tiny variation.** Send to a different address. Send a different amount. Each variation is real.
 
+## When nonce stops being something viem hides from you
+
+In this lesson, viem fetches your nonce automatically. That works because exactly one script is signing from your key at a time. The moment you have **multiple processes (or agents) signing from the same private key in parallel**, that comfort disappears.
+
+The rule: every transaction from an account has a strictly increasing nonce. If you broadcast nonce 10 before nonce 9 has landed, the network holds nonce 10 in the mempool and refuses to include it until nonce 9 shows up. If nonce 9 never arrives, nonce 10 hangs forever.
+
+The failure modes get nasty fast:
+
+- **Two agents read the same nonce, both sign, one wins.** The loser's tx is stuck or replaced. Money/state is lost depending on what the tx did.
+- **An agent gets nonce 11 while nonce 10 is still pending.** Nonce 11 sits in mempool until 10 confirms — looks like the network is "slow" but it's actually waiting.
+- **One agent crashes mid-broadcast, leaving a gap.** Every later tx hangs until you backfill the gap (often by sending a 0-ETH self-transfer at the missing nonce).
+
+There are a few standard ways to deal with it, in increasing order of complexity:
+
+1. **One signer per key.** Serialize all signing through a single process. Simple, slow, doesn't scale.
+2. **Centralized nonce manager.** Hold the nonce in shared state (Redis, a DB) and have every agent atomically increment it before signing. You're now the source of truth, not the chain.
+3. **One key per agent.** Skip the contention entirely — give each agent its own funded key. Trades coordination cost for fund-management cost.
+4. **A signer service.** Delegate signing to a single service (e.g. a KMS-backed transaction broker) so the nonce never leaves one process. This is what production multi-agent systems usually end up doing.
+
+For the lessons in this repo you'll only have one signer at a time, so viem's automatic nonce handling is fine. But if you ever scale to "multiple agents transacting from the same key" — keep this section in mind. The chain doesn't forgive nonce gaps.
+
 ## What's next
 
 You've now read state, written state, watched real-time updates, and sent transactions. That's the full "EOA on Base" skill set.

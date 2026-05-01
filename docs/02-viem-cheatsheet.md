@@ -26,14 +26,14 @@ The lessons in this repo all use [viem](https://viem.sh/) to talk to Base. viem 
 | [`getBlockNumber()`](https://viem.sh/docs/actions/public/getBlockNumber) | Latest block number as `bigint`. | [Lesson 1](../experiments/001-hello-base/) |
 | [`getBlock()`](https://viem.sh/docs/actions/public/getBlock) | Full block object — timestamp, tx count, gas used, etc. | Lesson 1 bonus |
 | [`getBalance({ address })`](https://viem.sh/docs/actions/public/getBalance) | Address balance in wei (`bigint`). | [Lesson 2](../experiments/002-read-balance/) |
-| [`getTransactionCount({ address })`](https://viem.sh/docs/actions/public/getTransactionCount) | The address's nonce — number of txs it has sent. | Lesson 2 bonus |
+| [`getTransactionCount({ address })`](https://viem.sh/docs/actions/public/getTransactionCount) | The address's nonce — number of txs it has sent. Becomes load-bearing once multiple processes sign from the same key (see [Lesson 4's "When nonce stops being something viem hides from you"](../experiments/004-first-tx/README.md#when-nonce-stops-being-something-viem-hides-from-you)). | Lesson 2 bonus |
 | [`waitForTransactionReceipt({ hash })`](https://viem.sh/docs/actions/public/waitForTransactionReceipt) | Polls until tx is included + confirmed; returns receipt with status, gas used, logs. | [Lesson 4](../experiments/004-first-tx/) |
 
 ## Writing state (wallet client methods)
 
 | Method | What it does | First used in |
 |---|---|---|
-| [`sendTransaction({ to, value })`](https://viem.sh/docs/actions/wallet/sendTransaction) | Signs + broadcasts a transaction. Returns the tx hash. viem fills in nonce, gas, chain id, signature. | [Lesson 4](../experiments/004-first-tx/) |
+| [`sendTransaction({ to, value })`](https://viem.sh/docs/actions/wallet/sendTransaction) | Signs + broadcasts a transaction. Returns the tx hash. viem fills in nonce, gas, chain id, signature — that auto-nonce is fine for a single signer but breaks the moment multiple processes sign from the same key. | [Lesson 4](../experiments/004-first-tx/) |
 
 ## Accounts (signing)
 
