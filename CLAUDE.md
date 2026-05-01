@@ -11,9 +11,10 @@ This is a **public** repo. It is a learning lab and educational artifact for bui
 | `guides/` | Longer-form how-to guides (deeper than `docs/`) |
 | `prompts/` | **Curated** teaching prompts only — reusable, generalizable, valuable to other builders. Not a transcript dump. |
 | `resources/` | Links, references, curated reading |
-| `LEARNED.md` | Distilled, generalizable takeaways — running log of "things worth knowing" |
 | `NEXT.md` | Public roadmap of what's being worked on next |
 | `ROADMAP.md` | Higher-level milestone goals |
+
+**Note:** the author's personal "what I learned" log lives in a separate private notebook, not here. When something proves teaching-worthy, it's used to **improve the docs and lesson READMEs in this repo**, not added as a personal log entry. Public artifacts are reference material for forkers, not a journal.
 
 ## Curation bar
 

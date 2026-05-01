@@ -2,7 +2,7 @@
 
 A public log of learning to build on [Base](https://docs.base.org/get-started/base) — Coinbase's L2. Build-in-public, in real time, with the work checked in as it happens.
 
-> Status: **active, just started.** Most folders are stubs. Check [`NEXT.md`](./NEXT.md) for what's on deck and [`LEARNED.md`](./LEARNED.md) for what's been figured out so far.
+> Status: **active, just started.** Most folders are stubs. Check [`NEXT.md`](./NEXT.md) for what's on deck and [`ROADMAP.md`](./ROADMAP.md) for the bigger arc.
 
 ## Why this repo exists
 
@@ -17,7 +17,6 @@ base-agent-lab/
 ├── guides/        longer how-to material
 ├── prompts/       curated teaching prompts (not a transcript dump)
 ├── resources/     curated links + references
-├── LEARNED.md     running log of distilled takeaways
 ├── NEXT.md        what's on deck next
 └── ROADMAP.md     higher-level milestone goals
 ```

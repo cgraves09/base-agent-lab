@@ -17,4 +17,4 @@ What's on deck for `base-agent-lab`. This is the public-facing queue — concret
 
 ## Format
 
-When an item is finished, the artifact (a doc, a guide, an experiment, or a `LEARNED.md` entry) is the proof — checkboxes here are just navigation. Don't move on without writing down what surprised you in the experiment.
+When an item is finished, the artifact (a doc, a guide, or an experiment) is the proof — checkboxes here are just navigation.

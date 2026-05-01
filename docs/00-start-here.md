@@ -19,7 +19,6 @@ A public, in-progress log of one builder learning to ship on [Base](https://docs
 - **`guides/`** — longer how-to material that goes deeper than `docs/`.
 - **`prompts/`** — curated teaching prompts for working with AI assistants on Base. These are reusable; they are not a transcript dump.
 - **`resources/`** — curated links and references.
-- **`LEARNED.md`** — running log of distilled takeaways validated by the work in this repo.
 - **`NEXT.md`** — what's on deck next.
 - **`ROADMAP.md`** — higher-level milestone goals.
 
@@ -27,6 +26,6 @@ A public, in-progress log of one builder learning to ship on [Base](https://docs
 
 If you're new to Base: start with [`01-base-basics.md`](./01-base-basics.md), then skim [`../resources/base-docs.md`](../resources/base-docs.md) for the official sources.
 
-If you're following along: watch [`NEXT.md`](../NEXT.md) and [`LEARNED.md`](../LEARNED.md) for the latest.
+If you're following along: watch [`NEXT.md`](../NEXT.md) and the experiments under [`experiments/`](../experiments/) for the latest.
 
 If you want to run the experiments: each one in `experiments/` will have its own README with setup instructions.
