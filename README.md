@@ -40,4 +40,4 @@ Anything published here should be: useful to someone other than me, generalizabl
 
 ## License
 
-TBD. Treat content as readable but not yet open-sourced — license file will be added before the first non-trivial code lands.
+[MIT](./LICENSE) — use, fork, remix freely.
