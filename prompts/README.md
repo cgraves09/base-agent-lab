@@ -2,9 +2,9 @@
 
 This folder is **curated teaching prompts only** — reusable, generalizable, valuable to other Base builders.
 
-It is **not** a transcript dump. It is not every prompt I've ever sent to Claude or any other model. The raw, working, personal archive lives in a separate **private** companion repo (`base-agent-notes/prompts/`), where it can stay messy without polluting this one.
+It is **not** a transcript dump. It is not every prompt I've ever sent to Claude or any other model. The raw, working, personal archive lives elsewhere where it can stay messy without polluting this one.
 
-When something in the private archive proves teaching-worthy, it gets rewritten and promoted here.
+When something in that archive proves teaching-worthy, it gets rewritten and promoted here.
 
 ## What makes a prompt worth publishing here
 

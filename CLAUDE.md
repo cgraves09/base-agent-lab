@@ -25,7 +25,7 @@ Anything published here should pass these tests:
 
 ## Where the raw working material lives
 
-Working drafts, daily logs, raw prompt archives, half-formed ideas, mistakes, X-post drafts, and decision logs live in a **separate, private** repo (`base-agent-notes`). When something there proves generalizable, it gets rewritten and promoted into this repo. Material does **not** flow the other direction — nothing private leaks into this public repo.
+Working drafts, daily logs, raw prompt archives, half-formed ideas, mistakes, and decision logs live in a **separate private notebook**. When something there proves generalizable, it gets rewritten and promoted into this repo. Material does **not** flow the other direction — nothing private leaks into this public repo.
 
 ## How to follow along
 

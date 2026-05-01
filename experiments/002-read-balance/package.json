@@ -1,0 +1,16 @@
+{
+  "name": "read-balance",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lesson 2 — read an account's balance on Base Sepolia.",
+  "scripts": {
+    "start": "node read-balance.js"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

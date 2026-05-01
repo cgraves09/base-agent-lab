@@ -1,0 +1,16 @@
+{
+  "name": "first-tx",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lesson 4 — send your first transaction on Base Sepolia.",
+  "scripts": {
+    "start": "node send-tx.js"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

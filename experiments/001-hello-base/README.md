@@ -26,7 +26,7 @@ Expected output (your block number will be larger):
    Latest block: 16234891
 ```
 
-If you see a block number, **you're done.** You just read live state off Base. Go log it in [`base-agent-notes/daily/`](#after-it-works).
+If you see a block number, **you're done.** You just read live state off Base.
 
 ## What just happened
 
@@ -53,14 +53,14 @@ That's the whole architecture for today: **your code → HTTP → a node → Bas
 | `Cannot find package 'viem'` | `npm install` didn't run or failed | Run `npm install` in this folder. |
 | Block number doesn't change between runs | Cache or you ran them within a few seconds — Base blocks are ~2s apart | Wait 5s and re-run. |
 
-If something breaks in a way that's not above — that's the lesson. Open `base-agent-notes/daily/YYYY-MM-DD.md`, write what happened, and we debug together.
+If something breaks in a way that's not above — that's the lesson. Write down what you tried and what you saw; that note is more valuable than the working code.
 
 ## After it works
 
 Don't move on yet. Do this first:
 
-1. **Log it.** Copy `base-agent-notes/daily/TEMPLATE.md` → `base-agent-notes/daily/2026-04-30.md` (use today's date). Answer the prompts, especially:
-   - *What surprised me?* (e.g. "I expected this to be harder")
+1. **Write down what you saw.** Wherever you keep notes, capture two things:
+   - *What surprised you?* (e.g. "I expected this to be harder")
    - *What didn't make sense?* (e.g. "why is the block number a BigInt?")
 2. **Look at the block on the explorer.** Copy the block number from your output and paste it into https://sepolia.basescan.org/. Look around. What's in a block?
 3. **One small modification.** Change `read-block.js` to also print the block's **timestamp** and the number of **transactions** in it. (Hint: `client.getBlock()` instead of `getBlockNumber()`.) Don't look up the answer first — try, fail, then look it up. The failure is the lesson.

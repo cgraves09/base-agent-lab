@@ -1,0 +1,17 @@
+{
+  "name": "faucet-drip",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lesson 3 — get free Sepolia ETH from a faucet and watch your balance change.",
+  "scripts": {
+    "generate": "node generate-key.js",
+    "watch": "node watch-balance.js"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

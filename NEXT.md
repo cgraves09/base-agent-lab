@@ -1,23 +1,20 @@
 # Next
 
-What's on deck for `base-agent-lab`. This is the public-facing queue — concrete, polished, honest. Speculative ideas and brainstorms live in the private companion repo.
+What's on deck for `base-agent-lab`. This is the public-facing queue — concrete, polished, honest. Speculative ideas and brainstorms live in a private companion notebook.
 
 ## Active
 
-- [ ] **Lesson 1 — Hello, Base.** Read the latest block from Base Sepolia. → [`experiments/001-hello-base/`](./experiments/001-hello-base/)
+- [x] **Lesson 1 — Hello, Base.** → [`experiments/001-hello-base/`](./experiments/001-hello-base/) ✅ complete
+- [ ] **Lesson 2 — Read an account's balance.** → [`experiments/002-read-balance/`](./experiments/002-read-balance/)
+- [ ] **Lesson 3 — Faucet drip + watch your balance change.** → [`experiments/003-faucet-drip/`](./experiments/003-faucet-drip/)
+- [ ] **Lesson 4 — Send your first transaction.** → [`experiments/004-first-tx/`](./experiments/004-first-tx/)
 
 ## On deck
 
-- [ ] **Lesson 2 — Read an account's balance** on Base Sepolia. (Pick any address from the explorer.)
-- [ ] **Lesson 3 — Get free Sepolia ETH** from a faucet, watch a balance change.
-- [ ] **Lesson 4 — Send your first transaction** on Sepolia.
-- [ ] First entry in [`LEARNED.md`](./LEARNED.md) — distilled from Lessons 1–4.
-
-## Soon
-
-- [ ] **Lesson 5 — Deploy your first contract** to Base Sepolia. Pick a framework (Foundry vs Hardhat) and document the choice.
+- [ ] **Lesson 5 — Deploy your first contract** to Base Sepolia. (Decide Foundry vs Hardhat first — this needs a real check-in before starting.)
 - [ ] First `guides/` entry — a polished walkthrough of Lessons 1–4 for other beginners.
+- [ ] First `prompts/` entry — distilled from any prompts that proved teaching-worthy across Lessons 1–4.
 
 ## Format
 
-When an item is finished, move it from this list into a real artifact (a doc, a guide, an experiment, or a `LEARNED.md` entry) — don't just check it off. The check-off lives in the commit.
+When an item is finished, the artifact (a doc, a guide, an experiment, or a `LEARNED.md` entry) is the proof — checkboxes here are just navigation. Don't move on without writing down what surprised you in the experiment.
